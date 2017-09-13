@@ -1,25 +1,21 @@
 package br.com.casadocodigo.introducao;
 
-import org.joda.time.DateTime;
-
 public class Book {
 
 	private final String name;
 	private final String author;
-	private final DateTime releaseDate;
 
 	// outros atributos
 
-	public Book (String name, String author, String releaseDate) {
+	public Book (String name, String author) {
 		this.name = name;
 		this.author = author;
-		this.releaseDate = DateTime.parse(releaseDate);
 	}
 
 	// getters e outros métodos
 
-	public DateTime getReleaseDate() {
-		return releaseDate;
+	public String getName() {
+		return name;
 	}
 
 	public boolean hasAuthor(String name) {
@@ -28,8 +24,7 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return "\nLivro " + name
-			+  "\nautor: " + author
-			+  "\nlançado em: " + releaseDate;
+		return "\nlivro: " + name
+			+  "\nautor: " + author;
 	}
 }
