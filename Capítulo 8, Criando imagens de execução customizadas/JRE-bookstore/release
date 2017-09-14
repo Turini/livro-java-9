@@ -1,0 +1,2 @@
+JAVA_VERSION="9"
+MODULES="java.base jdk.incubator.httpclient br.com.casadocodigo.domain br.com.casadocodigo.http br.com.casadocodigo.nf br.com.casadocodigo"
