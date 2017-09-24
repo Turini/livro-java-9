@@ -1,0 +1,7 @@
+public double averageLenght(List<String> words) {
+return words.stream()
+     .mapToInt(String::length).average()
+     .orElse(0);
+}
+List<String> words = List.of("sim", "podemos", "criar", "listas", "assim");
+averageLenght(words)
