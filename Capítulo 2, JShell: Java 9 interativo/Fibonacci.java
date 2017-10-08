@@ -7,11 +7,13 @@ public class Fibonacci {
 	   return fibonacci(n-1) + fibonacci(n-2);
 	}
 
-	public void loop(int end) {
-		for (int i = 0; i < end; i++) {
-			System.out.println(fibonacci(i));
-		}
-	}
+	// versão com o for, utilizada na implementação inicial
+	
+	//public void loop(int end) {
+	//	for (int i = 0; i < end; i++) {
+	//		System.out.println(fibonacci(i));
+	//	}
+	//}
 
 	public void loop(int end) {
 
