@@ -5,11 +5,12 @@ public class Books {
   public static List<Book> all() {
 
 	return List.of(
-		new Book("Desbravando Java", "Rodrigo Turini"),
-		new Book("APIs Java", "Rodrigo Turini"),
-		new Book("Java 8 Prático", "Rodrigo Turini, Paulo Silveira"),
-		new Book("TDD", "Mauricio Aniche"),
-		new Book("Certificação Java", "Guilherme Silveira")
+		new Book("Desbravando Java", "Rodrigo Turini", Category.PROGRAMMING),
+		new Book("APIs Java", "Rodrigo Turini", Category.PROGRAMMING),
+		new Book("Certificação Java", "Guilherme Silveira", Category.PROGRAMMING, Category.CERTIFICATION),
+		new Book("TDD", "Mauricio Aniche", Category.PROGRAMMING, Category.AGILE),
+		new Book("SOLID", "Mauricio Aniche", Category.PROGRAMMING),
+		new Book("Guia da Startup", "Joaquim Torres", Category.BUSINESS)
 	);
   }
 
